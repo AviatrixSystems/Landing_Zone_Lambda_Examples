@@ -6,11 +6,11 @@ One use case is to integrate the Lambda handler functions in this repo into your
 
 Functions provided:
 
- 1. TGW Creation and Deletion.
- #. Aviatrix Access Account creation and deletion. (This can be invoked when a new AWS account is created.)
- #. Security Domain creation and deletion. (This is optional, the function is used to create network segmentation.)
- #. Security Domain Connection Policy connect and disconnect. (This is optional, the function allows two network segmentation to communicate. 
- #. VPC attachment creation and deletion. (This can be invoked when a new VPC is created.)
+ 1. [TGW Creation and Deletion.](https://docs.aviatrix.com/HowTos/tgw_plan.html#create-aws-tgw)
+ 2. [Aviatrix Access Account creation and deletion. (This can be invoked when a new AWS account is created.)](https://docs.aviatrix.com/HowTos/aviatrix_account.html)
+ 3. [Security Domain creation and deletion. (This is optional, the function is used to create network segmentation.)](https://docs.aviatrix.com/HowTos/tgw_plan.html#create-a-new-security-domain)
+ 4. [Security Domain Connection Policy connect and disconnect. (This is optional, the function allows two network segmentation to communicate.](https://docs.aviatrix.com/HowTos/tgw_plan.html#create-a-new-security-domain)
+ 5. [VPC attachment creation and deletion. (This can be invoked when a new VPC is created.)](https://docs.aviatrix.com/HowTos/tgw_build.html#attach-vpc-to-tgw)
 
 
 ## Prerequisites

@@ -1,6 +1,16 @@
 # Landing Zone Lambda Examples
 
-This project provides AWS Lambda and Cloudformation examples to invoke Aviatrix APIs for TGW operations
+This project provides AWS Lambda and Cloudformation examples to invoke Aviatrix APIs for TGW operations. 
+
+One use case is to integrate the Lambda handler functions in this repo into your AWS Landing Zone plan, such that TGW VPC attachment can be part of Account Vending machine onboarding. 
+
+Functions provided:
+
+ 1. TGW Creation and Deletion.
+ #. Aviatrix Access Account creation and deletion. (This can be invoked when a new AWS account is created.)
+ #. Security Domain creation and deletion. (This is optional, the function is used to create network segmentation.)
+ #. Security Domain Connection Policy connect and disconnect. (This is optional, the function allows two network segmentation to communicate. 
+ #. VPC attachment creation and deletion. (This can be invoked when a new VPC is created.)
 
 
 ## Prerequisites
@@ -10,7 +20,7 @@ This project provides AWS Lambda and Cloudformation examples to invoke Aviatrix 
 + Zipped file (which contains the Lambda source file and 3rd party libraries/packages)
     - The zipped file example can be found in the directory  -->>  /s3_bucket_zipped_file/aviatrix_lambda_for_tgw_actions.zip
     - Place the zipped file in any S3 bucket that your Lambda can access.
-    - [Refer AWS Doc](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
+    - [Refer to AWS Doc](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
 + Cloudformation template
     - [In the Lambda function definition under the section "Resources", make sure the following fields match your configurations:]
         * (S3Bucket) S3 bucket name
